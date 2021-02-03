@@ -140,7 +140,7 @@ class LatLngInterpolationStream {
             latLng, lastInterpolatedPosition ?? previousLatLng);
 
         //Determine if the marker's has made a significantly movement
-        if (diff.isNaN || distance < 1.5) {
+        if (diff.isNaN) {
           continue;
         }
 
